@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerPpal{
+    width: 76vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 21% 48% 31% auto;
+    grid-template-rows: 50px auto;
+    justify-content: center;
+    grid-template-areas: 
+        ". sidenav header aside ."
+        ". sidenav main aside .";
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header > h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-left: 15px;
+}
+header > span{
+    padding-right: 15px;
+}
+.logo{
+    padding: 10px 10px;
+    height: 50px;
+}
+nav{
+    grid-area: sidenav;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    
+}
+.spacer{
+    flex: 1;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;  
+    
+}
+nav > ul > li{
+    padding: 20px 10px;
+    cursor: pointer;
+}
+nav > ul > li > div > span {
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.boton{
+    display: block;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin-right: 20px;
+    background-color:#1D9BF0 ;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+.box-user{
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;  
+    justify-self: end;  
+    margin-bottom: 10px;
+}
+.box-user > span {
+    align-self: center;
+}
+.user-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.title{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.sub-title{
+    font-size: 0.7rem;
+}
+
+main{
+    grid-area: main;
+    border: 1px solid black;
+}
+aside{
+    grid-area: aside;
+    border: 1px solid black;
+}
+
