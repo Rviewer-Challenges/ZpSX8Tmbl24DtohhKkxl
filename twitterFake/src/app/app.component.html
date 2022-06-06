@@ -1,41 +1,170 @@
 <div class="containerPpal">
   <header>
     <h1>Home</h1>
-    <span><fa-icon [icon]="faStar"></fa-icon></span>     
+    <span>
+      <fa-icon [icon]="faStar"></fa-icon>
+    </span>
   </header>
   <nav>
-    <div class="logo"><fa-icon [icon]="faStar"></fa-icon></div>
-    <ul>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Home</span></div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Explore</span> </div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Notifications</span></div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Messages</span></div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Bookmarks</span></div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Lists</span></div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>Profile</span></div></li>
-      <li><div><fa-icon [icon]="faStar"></fa-icon><span>More</span></div></li>
-      
-    </ul>
-    <a class="boton">Tweet</a>
-    <div class="spacer"></div>
-    
+    <div class="logo">
+      <fa-icon [icon]="faStar"></fa-icon>
+    </div>
+    <div class="wrapper-nav-boton">
+      <ul>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Home</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Explore</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Notifications</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Messages</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Bookmarks</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Lists</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>Profile</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <fa-icon [icon]="faStar"></fa-icon><span>More</span>
+          </div>
+        </li>
+
+      </ul>
+      <a class="boton">Tweet</a>
+
+    </div>
+
     <div class="box-user">
-      <span><fa-icon [icon]="faStar"></fa-icon></span>
+      <span>
+        <fa-icon [icon]="faStar"></fa-icon>
+      </span>
       <div class="user-content">
         <span class="title">Manuel Fernández</span>
         <span class="sub-title">@ManuelF09131599</span>
       </div>
-      <span><fa-icon [icon]="faStar"></fa-icon></span>
+      <span>
+        <fa-icon [icon]="faStar"></fa-icon>
+      </span>
     </div>
   </nav>
   <main>
 
   </main>
   <aside>
-    <footer>
+    <div class="box-search">
+      <input type="search" name="search" id="search" placeholder="Search Twitter">
+      <span>
+        <fa-icon [icon]="faStar"></fa-icon>
+      </span>
+    </div>
+    <section class="happend">
+      <div class="titulares">
+        <h3>What's happening</h3>
+        <div class="box-titular">
+          <div class="titular-content">
+            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
+            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
+          </div>
+          <img src="./../assets/Home _ Twitter_files/obrador.jpg" alt="obrador">
+        </div>
+        <div class="box-titular">
+          <div class="titular-content">
+            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
+            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
+          </div>
+          <img src="./../assets/Home _ Twitter_files/obrador.jpg" alt="obrador">
+        </div>
+        <div class="box-titular">
+          <div class="titular-content">
+            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
+            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
+          </div>
+          <img src="./../assets/Home _ Twitter_files/obrador.jpg" alt="obrador">
+        </div>
+        <div class="box-titular">
+          <div class="titular-content">
+            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
+            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
+          </div>
+          <img src="./../assets/Home _ Twitter_files/obrador.jpg" alt="obrador">
+        </div>
+        <div class="box-titular">
+          <div class="titular-content">
+            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
+            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
+          </div>
+          <img src="./../assets/Home _ Twitter_files/obrador.jpg" alt="obrador">
+        </div>
+        <a href="">Show more</a>
+      </div>
 
+    </section>
+
+    <section class="who">
+      <h3>Who to follow</h3>
+      <div class="box-follow">
+        <div class="user-follow">
+          <img class="logo-user" src="./../assets/Home _ Twitter_files/userFake.jpg" alt="user fake">
+          <div class="follow-content">
+            <span class="title">La Resistencia por M+</span><span class="sub-title">@LaResistencia</span>
+          </div>
+        </div>
+        <input type="button" class="boton-follow" value="Follow">
+      </div>
+      <div class="box-follow">
+        <div class="user-follow">
+          <img class="logo-user" src="./../assets/Home _ Twitter_files/userFake.jpg" alt="user fake">
+          <div class="follow-content">
+            <span class="title">La Resistencia por M+</span><span class="sub-title">@LaResistencia</span>
+          </div>
+        </div>
+        <input type="button" class="boton-follow" value="Follow">
+      </div>
+      <div class="box-follow">
+        <div class="user-follow">
+          <img class="logo-user" src="./../assets/Home _ Twitter_files/userFake.jpg" alt="user fake">
+          <div class="follow-content">
+            <span class="title">La Resistencia por M+</span><span class="sub-title">@LaResistencia</span>
+          </div>
+        </div>
+        <input type="button" class="boton-follow" value="Follow">
+      </div>
+
+
+
+      <a href="">Show more</a>
+    </section>
+
+    <footer>
+      <span><a href="">Terms of Service</a></span><span><a href="">Privacy Policy</a></span>
+      <span><a href="">Cookie Policy</a></span><span><a href="">Accessibility</a></span>
+      <span><a href="">Ads info</a></span><span><a href="">More</a></span><br><span><a href="">© 2022 Twitter, Inc.</a></span>
     </footer>
   </aside>
 
 
 </div>
+
