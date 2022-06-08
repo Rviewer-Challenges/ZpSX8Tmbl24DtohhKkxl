@@ -31,7 +31,7 @@ body{
 /*header*/
 header{
     grid-area: header;
-    
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +61,7 @@ nav{
     height: 95vh;
     position: sticky;
     top: 0;
+    border-right: 1px solid #d5d7da;
     
 }
 .wrapper-nav-boton{
@@ -100,6 +101,7 @@ nav{
     border-radius: 30px;
     margin-right: 20px;
     background-color:#1D9BF0 ;
+    border: none;
     color: #FFFFFF;
     font-weight: 600;
     text-align: center;
@@ -141,6 +143,7 @@ aside{
     padding-left: 30px;    
     display: flex;
     flex-direction: column;
+    border-left: 1px solid #d5d7da;;
 }
 
 
@@ -274,6 +277,59 @@ aside{
     margin-top: 30px;
     text-decoration: none;
     color: #1D9BF0;
+}
+
+.box-new-tweet{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-bottom: 1px solid #d5d7da;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.user-text > img{
+    align-self: flex-start;
+    border-radius: 50%;
+}
+.user-text{
+    display: flex;
+}
+.box-new-tweet-content{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    
+}
+
+.textarea{
+    display: block;    
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "What's happening?";
+    color: gray;
+  }
+.box-new-tweet-content-inferior{
+    display: flex;
+}
+
+.box-new-tweet-content-inferior > ul{
+    list-style-type: none;
+    display: flex;
+}
+.box-buttons-new-tweet{
+    display: flex;
 }
 footer{
     padding: 20px;

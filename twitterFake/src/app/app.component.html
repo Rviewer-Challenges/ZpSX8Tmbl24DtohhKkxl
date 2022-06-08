@@ -53,7 +53,7 @@
         </li>
 
       </ul>
-      <a class="boton">Tweet</a>
+      <input type="button" class="boton" value="tweet">
 
     </div>
 
@@ -71,7 +71,55 @@
     </div>
   </nav>
   <main>
+    <div class="box-new-tweet">
+       <div class="user-text">
+          <img src="./../assets/Home _ Twitter_files/userPequeño.png" alt="logo user">
+          <span id="tweet" class="textarea" role="textbox" contenteditable></span>
+        </div>
+      <div class="box-new-tweet-content">
+        
+        
+        
+        
+        <input type="button" value="Everyone can reply" class="boton-new-tweet">
+        <div class="line"></div>
+        <div class="box-new-tweet-content-inferior">
+          <ul>
+            <li><a href="">
+                <fa-icon [icon]="faStar"></fa-icon>
+              </a></li>
+            <li><a href="">
+                <fa-icon [icon]="faStar"></fa-icon>
+              </a></li>
+            <li><a href="">
+                <fa-icon [icon]="faStar"></fa-icon>
+              </a></li>
+            <li><a href="">
+                <fa-icon [icon]="faStar"></fa-icon>
+              </a></li>
+            <li><a href="">
+                <fa-icon [icon]="faStar"></fa-icon>
+              </a></li>
+            <li><a href="">
+                <fa-icon [icon]="faStar"></fa-icon>
+              </a></li>
+          </ul>
+          <div class="box-buttons-new-tweet">
+            <span>
+              <fa-icon [icon]="faStar"></fa-icon>
+            </span>
+            <div class="separator"></div>
+            <button class="boton-new-thread"><span>
+                <fa-icon [icon]="faStar"></fa-icon>
+              </span></button>
+            <input type="button" value="tweet" class="boton">
 
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </main>
   <aside>
     <div class="box-search">
@@ -152,19 +200,18 @@
         </div>
         <input type="button" class="boton-follow" value="Follow">
       </div>
-
-
-
       <a href="">Show more</a>
     </section>
+
+
 
     <footer>
       <span><a href="">Terms of Service</a></span><span><a href="">Privacy Policy</a></span>
       <span><a href="">Cookie Policy</a></span><span><a href="">Accessibility</a></span>
-      <span><a href="">Ads info</a></span><span><a href="">More</a></span><br><span><a href="">© 2022 Twitter, Inc.</a></span>
+      <span><a href="">Ads info</a></span><span><a href="">More</a></span><br><span><a href="">© 2022 Twitter,
+          Inc.</a></span>
     </footer>
   </aside>
 
 
 </div>
-
