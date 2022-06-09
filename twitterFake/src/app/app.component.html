@@ -53,7 +53,10 @@
         </li>
 
       </ul>
-      <input type="button" class="boton" value="tweet">
+      <div class="wrapper-button">
+        <input type="button" class="boton" value="tweet">
+      </div>
+      
 
     </div>
 
@@ -72,16 +75,17 @@
   </nav>
   <main>
     <div class="box-new-tweet">
-       <div class="user-text">
-          <img src="./../assets/Home _ Twitter_files/userPequeño.png" alt="logo user">
-          <span id="tweet" class="textarea" role="textbox" contenteditable></span>
-        </div>
+      <img src="./../assets/Home _ Twitter_files/userPequeño.png" alt="logo user">  
+          
       <div class="box-new-tweet-content">
+        <div class="user-text">        
+          <span id="tweet" class="textarea" role="textbox" contenteditable ></span>
+        </div>
+        <div class="wrapper-button">
+          
+          <button class="boton-new-tweet"><fa-icon [icon]="faStar"></fa-icon> Everyone can reply</button>
+        </div>
         
-        
-        
-        
-        <input type="button" value="Everyone can reply" class="boton-new-tweet">
         <div class="line"></div>
         <div class="box-new-tweet-content-inferior">
           <ul>
@@ -111,8 +115,9 @@
             <div class="separator"></div>
             <button class="boton-new-thread"><span>
                 <fa-icon [icon]="faStar"></fa-icon>
-              </span></button>
-            <input type="button" value="tweet" class="boton">
+              </span>
+            </button>
+            <input type="button" value="Tweet" class="boton2" disabled="true">
 
           </div>
         </div>
