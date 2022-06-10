@@ -18,9 +18,10 @@ body{
 
 .containerPpal{
     position: relative;
-    width: 76vw;
+    width: 80vw;
     min-height: 100vh;
     display: grid;
+    
     grid-template-columns: 21% 48% 31%;
     grid-template-rows: 50px auto;
     justify-content: center;
@@ -37,18 +38,21 @@ header{
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 15px;
+    opacity: 0.95;
+    border-left: 1px solid #d5d7da;
+    border-right: 1px solid #d5d7da;
 }
-header > h1 {
+.header-content-h1 > h1 {
     font-size: 1.2rem;
     font-weight: 700;
-    padding-left: 15px;
+    
 }
-header > span{
-    padding-right: 15px;
-}
+
 .logo{
     padding: 10px 20px;
     height: 50px;
+    align-self: flex-start;
 }
 /*sidenavbar*/
 
@@ -57,11 +61,11 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 15px;
+    align-items: flex-end;
     height: 95vh;
     position: sticky;
     top: 0;
-    border-right: 1px solid #d5d7da;
+    
     
 }
 .wrapper-nav-boton{
@@ -117,8 +121,9 @@ nav{
 .box-user{
     display: flex;
     justify-content: center;
-    align-self: flex-start;  
-    justify-self: flex-end;  
+    
+    justify-self: flex-end;
+    padding: 15px;  
    /* margin-bottom: 20px;*/
 }
 .box-user > span {
@@ -130,7 +135,11 @@ nav{
     align-items: flex-start;
     justify-content: flex-start;
 }
-
+.box-user-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .title{
     font-size: 0.9rem;
@@ -143,21 +152,28 @@ nav{
 /*aside*/
 
 aside{
+    grid-area: aside;
     width: 100%;    
     padding-left: 30px;    
     display: flex;
     flex-direction: column;
-    border-left: 1px solid #d5d7da;;
+      
+    height: 1200px;  
+    position: sticky;
+    top: 0;
+    
 }
 
 
 .box-search{
-    position: relative;
+    background-color: #FFFFFF;
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
     
 }
 .box-search > input[type='search']{    
@@ -379,7 +395,7 @@ aside{
 }
 .separator{
     height: 40px;
-    background-color: #616263;
+    background-color: #e7e7e5;
     width: 1px;
     margin-right: 10px;
     margin-left: 10px;
@@ -406,6 +422,67 @@ aside{
     font-size: 1rem;
     width: 90%;
 }
+
+.box-tweet{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+        "logo user"
+        "logo tweet"        
+        "logo icons";
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid #d5d7da;
+}
+.box-tweet:hover{
+    background-color: #e7e7e5;
+}
+.tweet{
+    grid-area: tweet;
+}
+.logo-user-tweet{
+    grid-area: logo;    
+    
+}
+.logo-user-tweet > img{
+    border-radius: 50%;
+}
+
+.user{
+    grid-area: user;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user:last-child{
+    align-self: flex-end;
+}
+.icons{
+    grid-area: icons;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper-tweet-img{
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+.wrapper-tweet-img > img {
+    border-radius: 15px;
+    object-fit: contain;
+    width: 100%;
+}
+.wrapper-tweet-img > video {
+    border-radius: 15px;
+    object-fit: contain;
+    width: 100%;
+}
 footer{
     padding: 20px;
 }
@@ -419,10 +496,135 @@ footer > span > a{
 
 main{
     grid-area: main;
+    border: 1px solid #d5d7da;
     
 }
 aside{
     grid-area: aside;
  
 }
+.pluma-resp{
+    display: none;
+}
 
+.boton-pluma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;    
+    background-color:#1D9BF0 ;
+    border: none;
+    color: #FFFFFF;
+    
+}
+
+.user-boton-movil{
+    display: none;
+}
+
+@media (max-width:1224px){
+    .wrapper-nav-boton > ul > li > div > span{
+        display: none;
+        
+    }
+    .wrapper-button{
+        display: none;
+    }
+    .pluma-resp{
+        display: flex;
+        padding: 5px;
+    }
+    .containerPpal{
+        width: 90vw;    
+        grid-template-columns: 5% 58% 32%;        
+    }
+    .logo{
+        padding: 10px 20px;
+        height: 50px;        
+    }
+    .box-user-content{
+        display: none;
+    }
+}
+.box-show-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1D9BF0;
+    border-bottom: 1px solid #d5d7da;
+    height: 50px;
+}
+@media (max-width:1190px){
+    aside{
+        display: none;
+    }
+    .containerPpal{
+                
+        grid-template-columns: 10% 80% 10%;
+        width: 100vw;
+    }
+
+}
+@media (max-width:768px){
+
+    .containerPpal{
+                
+        grid-template-columns: 10% 80% 10%;
+        
+    }
+
+}
+@media (max-width:600px){
+
+    .containerPpal{
+                
+        grid-template-columns: 10% 90% ;
+        grid-template-rows: 70px auto;
+    }
+
+}
+@media (max-width:500px){
+
+   nav{
+    display: none;
+   }
+   .containerPpal{
+                
+    grid-template-columns: 0% 95% 0%;
+    
+    }
+    .box-new-tweet{
+        display: none;
+    }
+    .box-tweet{
+        padding: 0;
+        grid-template-columns: 15% 85%;
+    }
+    
+    header {
+        padding: 0px; 
+        
+    }
+
+    .user-boton-movil{
+        display: block;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        
+    }
+    .header-content-h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-content-h1 > h1{
+        margin-left: 15px;
+    }
+    .user-boton-movil > img{
+        border-radius: 50%;
+    }
+
+}
