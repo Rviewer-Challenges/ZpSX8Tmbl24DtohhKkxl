@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,5 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'twitterFake';
-  faStar=faStar
+  faStar=faMagnifyingGlass
 }

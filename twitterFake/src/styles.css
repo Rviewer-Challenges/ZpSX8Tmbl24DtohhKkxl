@@ -7,6 +7,17 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
 }
+:root{
+    --accent:#1D9BF0;
+    --borderColor:#d5d7da;
+    --backGroundColorPPal:#FFFFFF;
+    --hoverColor:#e7e7e5;
+    --colorTextBoton:#FFFFFF;
+    --backGroundColorSectionAside:#EFF3F4;
+    --colorTextSubTitles:#536471;
+    --colorTextMenu:#0F1419;
+    --colorTextArea:#536471;
+}
 
 body{
     width: 100vw;
@@ -32,7 +43,7 @@ body{
 /*header*/
 header{
     grid-area: header;
-    background-color: #FFFFFF;
+    background-color: var(--backGroundColorPPal);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,13 +51,12 @@ header{
     top: 0;
     padding: 15px;
     opacity: 0.95;
-    border-left: 1px solid #d5d7da;
-    border-right: 1px solid #d5d7da;
+    border-left: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
 }
 .header-content-h1 > h1 {
     font-size: 1.2rem;
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 
 .logo{
@@ -81,7 +91,6 @@ nav{
     margin-right: 20px;
 }
 
-
 .wrapper-nav-boton > ul {
     list-style-type: none;
     display: flex;
@@ -89,42 +98,44 @@ nav{
     align-items: flex-start;
 }
 .wrapper-nav-boton > ul > li{
-
     padding: 15px 20px;
     cursor: pointer;
     border-radius: 30px;
     
 }
 .wrapper-nav-boton > ul > li:hover{
-    background-color: #e7e7e5;
+    background-color: var(--hoverColor);
+}
+.wrapper-nav-boton > ul > li:active ~.wrapper-nav-boton > ul > li > div > span  {
+    color: black;
 }
 
 .wrapper-nav-boton > ul > li > div > span {
     margin-left: 15px;
     font-size: 1.2rem;
+    color: var(--colorTextMenu);
 }
 
 .boton{
     display: block;
     padding: 15px 25px;
     border-radius: 30px;    
-    background-color:#1D9BF0 ;
+    background-color:var(--accent) ;
     border: none;
-    color: #FFFFFF;
+    color: var(--colorTextBoton);
     font-weight: 600;
     text-align: center;
     font-size: 1.2rem;
     width: 90%;
 }
 
-
+/*user*/
 .box-user{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
     justify-self: flex-end;
     padding: 15px;  
-   /* margin-bottom: 20px;*/
+   
 }
 .box-user > span {
     align-self: center;
@@ -142,11 +153,12 @@ nav{
 }
 
 .title{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .sub-title{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    color: var(--colorTextSubTitles);
 }
 
 /*aside*/
@@ -156,17 +168,15 @@ aside{
     width: 100%;    
     padding-left: 30px;    
     display: flex;
-    flex-direction: column;
-      
+    flex-direction: column;      
     height: 1200px;  
     position: sticky;
-    top: 0;
-    
+    top: 0;    
 }
 
 
 .box-search{
-    background-color: #FFFFFF;
+    background-color: var(--backGroundColorPPal);
     width: 100%;
     height: 50px;
     display: flex;
@@ -182,7 +192,7 @@ aside{
     border-radius: 25px;
     border: none;
     outline: none;
-    background-color: #EFF3F4;
+    background-color: var(--backGroundColorSectionAside);
     padding-left: 45px;
     font-size: 0.9rem;
     font-weight: 300;
@@ -202,7 +212,7 @@ aside{
 }
 
 .titulares{
-    background-color: #EFF3F4;
+    background-color: var(--backGroundColorSectionAside);
     padding: 15px;
     border-radius: 15px;
     display: flex;
@@ -215,7 +225,7 @@ aside{
 .titulares > a {
     margin-top: 30px;
     text-decoration: none;
-    color: #1D9BF0;
+    color: var(--accent);
 }
 .box-titular{
     display: flex;
@@ -223,7 +233,7 @@ aside{
     cursor: pointer;
 }
 .box-titular:hover{
-    background-color: #e7e7e5;
+    background-color: var(--hoverColor);
 }
 .box-titular > img{
     width: 60px;
@@ -243,8 +253,9 @@ aside{
     font-weight: 600;
     line-height: 1.2rem;
 }
+/*section who*/
 .who{
-    background-color: #EFF3F4;
+    background-color: var(--backGroundColorSectionAside);
     padding: 15px;
     border-radius: 15px;
     display: flex;
@@ -266,7 +277,7 @@ aside{
     align-items: center;
 }
 .box-follow:hover{
-    background-color: #e7e7e5;
+    background-color: var(--backGroundColorSectionAside);
 }
 
 .follow-content{
@@ -286,7 +297,7 @@ aside{
     border-radius: 30px;
     cursor: pointer;
     background-color:black ;
-    color: #FFFFFF;
+    color: var(--colorTextBoton);
     font-weight: 600;
     text-align: center;
     font-size: 0.9rem;
@@ -296,13 +307,16 @@ aside{
 .who > a {
     margin-top: 30px;
     text-decoration: none;
-    color: #1D9BF0;
+    color: var(--accent);
 }
 
+/*main*/
+
+/*box nuevo tweet*/
 .box-new-tweet{
     display: flex;
     padding: 15px;
-    border-bottom: 1px solid #d5d7da;
+    border-bottom: 1px solid var(--borderColor);
     flex-wrap: nowrap;
     width: 100%;
     justify-content: flex-start;
@@ -340,7 +354,7 @@ aside{
 
 .textarea[contenteditable]:empty::before {
     content: "What's happening?";
-    color: gray;
+    color: var(--colorTextSubTitles);
   }
 .box-new-tweet-content-inferior{
     display: flex;
@@ -358,7 +372,7 @@ aside{
 
 .line{
     height: 1px;
-    background-color: #d5d7da;
+    background-color: var(--borderColor);
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -366,12 +380,12 @@ aside{
 .wrapper-button{
     display: flex;
     align-items: center;
-    color: #1D9BF0;
+    color: var(--accent);
 }
 .boton-new-tweet{
     border: none;
-    color: #1D9BF0;
-    background-color: #FFFFFF;
+    color: var(--accent);
+    background-color: var(--backGroundColorPPal);
     font-weight: 700;
     padding: 3px 10px;
     border-radius: 10px;
@@ -386,7 +400,7 @@ aside{
 
 .box-new-tweet-content-inferior > ul > li > a{
     margin-right: 15px;
-    color: #1D9BF0;
+    color: var(--accent);
 } 
 .box-buttons-new-tweet{
     display: flex;
@@ -395,15 +409,15 @@ aside{
 }
 .separator{
     height: 40px;
-    background-color: #e7e7e5;
+    background-color: var(--borderColor);
     width: 1px;
     margin-right: 10px;
     margin-left: 10px;
 }
 .boton-new-thread{
-    border: 1px solid #d5d7da;
-    color: #1D9BF0;
-    background-color: #FFFFFF;
+    border: 1px solid var(--borderColor);
+    color: var(--accent);
+    background-color: var(--backGroundColorPPal);
     font-weight: 700;    
     border-radius: 25px;
     width: 40px;
@@ -414,9 +428,9 @@ aside{
     
     padding: 8px 10px;
     border-radius: 25px;    
-    background-color:#1D9BF0 ;
+    background-color:var(--accent) ;
     border: none;
-    color: #FFFFFF;
+    color: var(--colorTextBoton);
     font-weight: 600;
     text-align: center;
     font-size: 1rem;
@@ -467,7 +481,12 @@ aside{
     align-items: center;
     justify-content: space-between;
 }
-
+.icons:last-child{
+    margin-right: 60px;
+}
+.margin-left{
+    margin-left: 15px;
+}
 .wrapper-tweet-img{
     border-radius: 15px;
     width: 100%;
@@ -488,7 +507,7 @@ footer{
 }
 
 footer > span > a{
-    color: #616263;
+    color: var(--colorTextSubTitles);
     text-decoration: none;
     font-size: 0.7rem;
     margin-right: 10px;
@@ -499,10 +518,7 @@ main{
     border: 1px solid #d5d7da;
     
 }
-aside{
-    grid-area: aside;
- 
-}
+
 .pluma-resp{
     display: none;
 }
