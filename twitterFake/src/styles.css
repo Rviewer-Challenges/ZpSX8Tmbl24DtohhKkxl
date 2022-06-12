@@ -71,7 +71,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 95vh;
     position: sticky;
     top: 0;
@@ -140,6 +140,10 @@ nav{
 .box-user > span {
     align-self: center;
 }
+
+.box-user > span > img{
+    border-radius: 50%;
+}
 .user-content{
     display: flex;
     flex-direction: column;
@@ -150,14 +154,16 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .title{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 .sub-title{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--colorTextSubTitles);
 }
 
