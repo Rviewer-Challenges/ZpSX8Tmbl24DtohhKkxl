@@ -1,0 +1,10 @@
+app-side-nav-bar,app-header{
+    position: sticky;
+    top:0
+}
+
+app-aside{
+    position: sticky;
+    top:0;
+    height: 1200px;
+}

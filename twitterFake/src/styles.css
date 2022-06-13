@@ -134,7 +134,7 @@ nav{
     display: flex;
     justify-content: center;    
     justify-self: flex-end;
-    padding: 15px;  
+     
    
 }
 .box-user > span {
@@ -395,6 +395,7 @@ aside{
     font-weight: 700;
     padding: 3px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .boton-new-tweet:hover{
     background-color: #f0f2f3;
@@ -404,10 +405,25 @@ aside{
     background-color: #80c3f0;
 }
 
+.box-new-tweet-content-inferior > ul > li{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box-new-tweet-content-inferior > ul > li:hover{
+    background-color: #f0f2f3;
+}
+
 .box-new-tweet-content-inferior > ul > li > a{
-    margin-right: 15px;
+    text-align: center;
     color: var(--accent);
 } 
+
 .box-buttons-new-tweet{
     display: flex;
     align-items: center;
@@ -420,18 +436,19 @@ aside{
     margin-right: 10px;
     margin-left: 10px;
 }
-.boton-new-thread{
-    border: 1px solid var(--borderColor);
+.boton-new-thread{    
     color: var(--accent);
     background-color: var(--backGroundColorPPal);
     font-weight: 700;    
     border-radius: 25px;
     width: 40px;
     margin-right: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .boton2{
-    
+    cursor: pointer;
     padding: 8px 10px;
     border-radius: 25px;    
     background-color:var(--accent) ;
@@ -569,6 +586,10 @@ main{
     .box-user-content{
         display: none;
     }
+    .dots{
+        display: none;
+    }
+    
 }
 .box-show-more{
     display: flex;
@@ -577,6 +598,10 @@ main{
     color: #1D9BF0;
     border-bottom: 1px solid #d5d7da;
     height: 50px;
+    cursor: pointer;
+}
+.box-show-more:hover{
+    background-color: var(--hoverColor);
 }
 @media (max-width:1190px){
     aside{

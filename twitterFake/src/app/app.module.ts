@@ -16,7 +16,8 @@ import { PagesModule } from './pages/pages.module';
     AppRoutingModule,
     FontAwesomeModule,
     PagesModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

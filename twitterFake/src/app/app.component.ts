@@ -9,5 +9,5 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'twitterFake';
-  faStar=faMagnifyingGlass
+  
 }
