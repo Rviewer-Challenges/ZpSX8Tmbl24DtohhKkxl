@@ -1,106 +1,14 @@
-<div class="box-new-tweet">
-  <img src="./../assets/Home _ Twitter_files/userPequeño.png" alt="logo user">
 
-  <div class="box-new-tweet-content">
-    <div class="user-text">
-      <span id="tweet" class="textarea" role="textbox" contenteditable></span>
-    </div>
-    <div class="wrapper-button">
 
-      <button class="boton-new-tweet">
-        <fa-icon [icon]="faEarthAmericas"></fa-icon> Everyone can reply
-      </button>
-    </div>
+<app-new-tweet></app-new-tweet>
 
-    <div class="line"></div>
-    <div class="box-new-tweet-content-inferior">
-      <ul>
-        <li>
-          <a href="">
-            <fa-icon [icon]="faImage"></fa-icon>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <fa-icon [icon]="faStar"></fa-icon>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <fa-icon [icon]="faSquarePollVertical"></fa-icon>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <fa-icon [icon]="faFaceSmile"></fa-icon>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <fa-icon [icon]="faCalendarPlus"></fa-icon>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <fa-icon [icon]="faLocationDot"></fa-icon>
-          </a>
-        </li>
-      </ul>
-      <div class="box-buttons-new-tweet">
-        <span>
-          <fa-icon [icon]="faStar"></fa-icon>
-        </span>
-        <div class="separator"></div>
-        <button class="boton-new-thread"><span>
-            <fa-icon [icon]="faCirclePlus"></fa-icon>
-          </span>
-        </button>
-        <input type="button" value="Tweet" class="boton2" disabled="true">
-
-      </div>
-    </div>
-
-  </div>
-
-</div>
 <div class="box-show-more">
   <span>Show 454 Tweets</span>
 </div>
-<div class="box-tweet">
-  <div class="logo-user-tweet">
-    <img src="./../assets/Home _ Twitter_files/logoElPais.jpg" alt="logo el pais">
-  </div>
-  <div class="user">
-    <div><span class="title">EL PAIS</span><span class="sub-title"> @el_pais</span> · <span class="sub-title">21h</span>
-    </div>
-    <span>
-      <fa-icon [icon]="faEllipsis"></fa-icon>
-    </span>
-  </div>
-  <div class="tweet">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nulla illum unde, voluptatem molestias vero, ut
-      delectus sequi</p>
 
-  </div>
-  <div class="icons sub-title">
+<app-simple-tweet></app-simple-tweet>
 
-    <span>
-      <fa-icon [icon]="faComment"></fa-icon>
-      <span class="margin-left">134</span>
-    </span>
-    <span>
-      <fa-icon [icon]="faRetweet"></fa-icon>
-      <span class="margin-left">3501</span>
-    </span>
-    <span>
-      <fa-icon [icon]="faHeart"></fa-icon>
-      <span class="margin-left">32.7</span>
-    </span>
-    <span>
-      <fa-icon [icon]="faArrowUpFromBracket"></fa-icon>
-    </span>
-  </div>
-</div>
+
 <div class="box-tweet">
   <div class="logo-user-tweet">
     <img src="./../assets/Home _ Twitter_files/logoElPais.jpg" alt="logo el pais">
@@ -173,7 +81,7 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nulla illum unde, voluptatem molestias vero, ut
       delectus sequi </p>
     <div class="wrapper-tweet-img">
-      <img src="./../assets/images/strawberries-6834750_1280.jpg" alt="imagen prueba">
+      <img src="./../../../assets/gifs/GIF Animation.gif" alt="imagen prueba">
     </div>
   </div>
   <div class="icons">
@@ -202,7 +110,7 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nulla illum unde, voluptatem molestias vero, ut
       delectus sequi </p>
     <div class="wrapper-tweet-img">
-      <video width="100%" height="100%" autoplay>
+      <video width="100%" height="100%" controls muted autoplay>
         <source src="./../assets/images/People - 84973.mp4" type="video/mp4">
 
         Your browser does not support the video tag.

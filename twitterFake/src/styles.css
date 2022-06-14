@@ -59,10 +59,16 @@ header{
     font-weight: 700;    
 }
 
-.logo{
-    padding: 10px 20px;
-    height: 50px;
+header>span>svg{
+    width: 20px;
+    height: 20px;
     align-self: flex-start;
+}
+
+.logo > svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--accent);
 }
 /*sidenavbar*/
 
@@ -82,6 +88,7 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 1;
+    
 }
 
 .wrapper-button-nav{
@@ -134,7 +141,7 @@ nav{
     display: flex;
     justify-content: center;    
     justify-self: flex-end;
-     
+    margin-bottom: 40px; 
    
 }
 .box-user > span {
@@ -387,6 +394,7 @@ aside{
     display: flex;
     align-items: center;
     color: var(--accent);
+    margin-top: 15px;
 }
 .boton-new-tweet{
     border: none;
@@ -638,8 +646,15 @@ main{
     display: none;
    }
    .containerPpal{
-                
-    grid-template-columns: 0% 95% 0%;
+    /*            
+    grid-template-columns: 0 1fr 0;
+    width: 100vw;*/
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    width: 95%;
     
     }
     .box-new-tweet{
@@ -651,10 +666,14 @@ main{
     }
     
     header {
-        padding: 0px; 
-        
+        padding: 0px;
+        padding-left: 10px; 
+        padding-top: 10px;
+        border: none;
     }
-
+    main{
+        border: none;
+    }
     .user-boton-movil{
         display: block;
         background-color: transparent;

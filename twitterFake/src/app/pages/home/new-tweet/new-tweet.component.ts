@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { faMagnifyingGlass,faImage,faSquarePollVertical,
-         faFaceSmile,faCalendarPlus,faLocationDot,
-         faEarthAmericas,faCirclePlus,
-         faComment,faRetweet,faHeart,faArrowUpFromBracket,faEllipsis} 
-         from '@fortawesome/free-solid-svg-icons';
-
+import {faImage,faSquarePollVertical,faStar,
+  faFaceSmile,faCalendarPlus,faLocationDot,
+  faEarthAmericas,faCirclePlus,
+  faComment,faRetweet,faHeart,faArrowUpFromBracket,faEllipsis} from '@fortawesome/free-solid-svg-icons';
+ 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-new-tweet',
+  templateUrl: './new-tweet.component.html',
+  styleUrls: ['./new-tweet.component.css']
 })
-export class HomeComponent implements OnInit {
-
-  faStar=faMagnifyingGlass;
+export class NewTweetComponent implements OnInit {
+  
+  faStar=faStar;
   faImage=faImage;
   faSquarePollVertical=faSquarePollVertical;
   faFaceSmile=faFaceSmile;
