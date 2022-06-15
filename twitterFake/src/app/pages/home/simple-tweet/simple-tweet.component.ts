@@ -12,8 +12,15 @@ export class SimpleTweetComponent implements OnInit {
   faHeart=faHeart;
   faArrowUpFromBracket=faArrowUpFromBracket;
   faEllipsis=faEllipsis;
+  clase:string='wrapper-tweet-img';
+  
+  arrayImg:string[]=['./../assets/images/strawberries-6834750_1280.jpg',
+                     './../assets/images/strawberries-6834750_1280.jpg',
+                     './../assets/images/strawberries-6834750_1280.jpg',
+                     './../assets/images/strawberries-6834750_1280.jpg']
 
-  siVideo:boolean=true;
+
+  siVideo:boolean=false;
   siImagen:boolean=true;
   constructor() { }
 

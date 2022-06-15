@@ -14,8 +14,13 @@
       delectus sequi
     </p>
     <ng-container *ngIf="siImagen">
-      <div class="wrapper-tweet-img">
-        <img src="./../assets/images/strawberries-6834750_1280.jpg" alt="imagen prueba">
+      <div [ngClass]="clase">
+
+        <ng-container *ngFor="let img of arrayImg">
+          <img src="{{img}}" alt="imagen prueba">
+        </ng-container>
+        
+        
       </div>
     </ng-container>
     <ng-container *ngIf="siVideo"> 
