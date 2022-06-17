@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../../services/user.service';
 import {faImage,faSquarePollVertical,faStar,
   faFaceSmile,faCalendarPlus,faLocationDot,
   faEarthAmericas,faCirclePlus,
@@ -24,9 +25,11 @@ export class NewTweetComponent implements OnInit {
   faHeart=faHeart;
   faArrowUpFromBracket=faArrowUpFromBracket;
   faEllipsis=faEllipsis;
-  constructor() { }
+  constructor(public userService:UserService) { }
 
   ngOnInit(): void {
+    this.userService.getUser();
+    console.log(this.userService.user)
   }
 
 }

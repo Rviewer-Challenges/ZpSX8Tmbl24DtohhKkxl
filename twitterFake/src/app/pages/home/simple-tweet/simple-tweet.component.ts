@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faComment,faRetweet,faHeart,faArrowUpFromBracket,faEllipsis} from '@fortawesome/free-solid-svg-icons';
+import { TweetElement } from '../../../interfaces/tweet.interface';
 
 @Component({
   selector: 'app-simple-tweet',
@@ -12,6 +13,9 @@ export class SimpleTweetComponent implements OnInit {
   faHeart=faHeart;
   faArrowUpFromBracket=faArrowUpFromBracket;
   faEllipsis=faEllipsis;
+
+  @Input()tweet!:TweetElement;
+  
   clase:string='wrapper-tweet-img';
   
   arrayImg:string[]=['./../assets/images/strawberries-6834750_1280.jpg',

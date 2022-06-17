@@ -4,9 +4,9 @@
             "id":1,
             "tweet":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "user":{
-                "user-name":"lorem",
+                "user_name":"lorem",
                 "user":"@lorem",
-                "logo":"./src/assets/Home _ Twitter_files/logoElPais.jpg"
+                "logo":"./../assets/logos/logoElPais.jpg"
             },
             "images":[],
             "reply":1,
@@ -18,11 +18,11 @@
             "id":2,
             "tweet":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "user":{
-                "user-name":"ipsum",
+                "user_name":"ipsum",
                 "user":"@ipsum",
-                "logo":"./src/assets/Home _ Twitter_files/logoCNN.jpg"
+                "logo":"./../assets/logos/logoCNN.jpg"
             },
-            "images":["./src/assets/images/strawberries-6834750_1280.jpg"],
+            "images":["./../assets/images/strawberries-6834750_1280.jpg"],
             "reply":10,
             "retweet":105,
             "likes":200,
@@ -32,11 +32,11 @@
             "id":3,
             "tweet":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
             "user":{
-                "user-name":"sed",
+                "user_name":"sed",
                 "user":"@sed",
-                "logo":"./../assets/Home _ Twitter_files/logoElMundo.jpg"
+                "logo":"./../assets/logos/logoElMundo.jpg"
             },
-            "images":["./src/assets/images/strawberries-6834750_1280.jpg","./src/assets/images/strawberries-6834750_1280.jpg"],
+            "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg"],
             "reply":0,
             "retweet":1500,
             "likes":500,
@@ -46,12 +46,12 @@
             "id":4,
             "tweet":"Ut enim ad minima veniam",
             "user":{
-                "user-name":"enim",
+                "user_name":"enim",
                 "user":"@enim",
-                "logo":"./../assets/Home _ Twitter_files/logoLaVanguardia.jpg"
+                "logo":"./../assets/logos/logoLaVanguardia.jpg"
             },
-            "images":["./src/assets/images/strawberries-6834750_1280.jpg","./src/assets/images/strawberries-6834750_1280.jpg",
-                "./src/assets/images/strawberries-6834750_1280.jpg","./src/assets/images/strawberries-6834750_1280.jpg"],
+            "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg",
+                "./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg"],
             "reply":45,
             "retweet":5000,
             "likes":7500,
@@ -61,11 +61,11 @@
             "id":5,
             "tweet":"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
             "user":{
-                "user-name":"Quis",
+                "user_name":"Quis",
                 "user":"@Quis",
-                "logo":"./../assets/Home _ Twitter_files/userFake.jpg"
+                "logo":"./../assets/logos/userFake.jpg"
             },
-            "images":["./src/assets/gifs/GIF Animation.gif"],
+            "images":["./../assets/gifs/GIF Animation.gif"],
             "reply":11500,
             "retweet":15555,
             "likes":256654,
@@ -75,9 +75,9 @@
             "id":6,
             "tweet":"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
             "user":{
-                "user-name":"nemo",
+                "user_name":"nemo",
                 "user":"@nemo",
-                "logo":"./../assets/Home _ Twitter_files/logoElPais.jpg"
+                "logo":"./../assets/logos/logoElPais.jpg"
             },
             "images":[],
             "reply":45,

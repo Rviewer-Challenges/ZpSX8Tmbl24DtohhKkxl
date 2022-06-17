@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../services/user.service';
+import { User } from '../../interfaces/tweet.interface';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {  
-  constructor() { }
+
+  
+
+  constructor(public userService:UserService ) { }
 
   ngOnInit(): void {
+    this.userService.getUser();      
+    console.log(this.userService.user)
   }
 
 }

@@ -611,6 +611,7 @@ main{
     border-bottom: 1px solid #d5d7da;
     height: 50px;
     cursor: pointer;
+   
 }
 .box-show-more:hover{
     background-color: var(--hoverColor);
@@ -646,7 +647,32 @@ main{
 }
 @media (max-width:500px){
 
-   nav{
+    nav{
+        grid-area: footer;
+        bottom: 0px;
+        flex-direction: row;
+        background-color: var(--backGroundColorPPal);
+        width: 100%;
+        height: 80px;
+    }
+    .wrapper-nav-boton > ul{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wrapper-nav-boton > ul > li:nth-child(n+5){
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+   .wrapper-button{
+    display: none;
+   }
+   .box-user{
+    display: none;
+   }
+   .pluma-resp{
     display: none;
    }
    .containerPpal{
@@ -659,6 +685,10 @@ main{
     
     justify-content: center;
     width: 95%;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
     
     }
     .box-new-tweet{
@@ -697,4 +727,5 @@ main{
         border-radius: 50%;
     }
 
+    
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TweetService } from '../../services/tweet.service';
+import { Tweet, TweetElement } from '../../interfaces/tweet.interface';
 import { faMagnifyingGlass,faImage,faSquarePollVertical,
          faFaceSmile,faCalendarPlus,faLocationDot,
          faEarthAmericas,faCirclePlus,
@@ -25,9 +27,22 @@ export class HomeComponent implements OnInit {
   faHeart=faHeart;
   faArrowUpFromBracket=faArrowUpFromBracket;
   faEllipsis=faEllipsis;
-  constructor() { }
+  public tweets:TweetElement[]=[];
+
+  constructor(private tweetService:TweetService) { }
+
+  
+  public get numberTweets() : number {
+    return this.tweets.length
+  }
+  
 
   ngOnInit(): void {
+    this.tweetService.getTwwets().subscribe((resp:Tweet)=>{
+      this.tweets=resp.tweets;
+      console.log(this.tweets);
+    });
+    
   }
 
 }

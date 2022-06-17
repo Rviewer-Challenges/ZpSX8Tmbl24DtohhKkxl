@@ -10,11 +10,11 @@ export interface TweetElement {
     reply:   number;
     retweet: number;
     likes:   number;
-    hashtag: string;
+    hashtag: string[];
 }
 
 export interface User {
-    "user-name": string;
+    user_name: string;
     user:        string;
     logo:        string;
 }
