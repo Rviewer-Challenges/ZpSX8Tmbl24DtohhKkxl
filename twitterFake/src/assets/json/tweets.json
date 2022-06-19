@@ -79,7 +79,8 @@
                 "user":"@nemo",
                 "logo":"./../assets/logos/logoElPais.jpg"
             },
-            "images":[],
+            "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg",
+                "./../assets/images/strawberries-6834750_1280.jpg"],
             "reply":45,
             "retweet":500,
             "likes":2500,

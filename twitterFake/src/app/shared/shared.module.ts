@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
 import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -16,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     CommonModule,
     FontAwesomeModule,
+    ComponentsModule
   ],
   exports:[
     HeaderComponent,

@@ -518,25 +518,8 @@ aside{
 .margin-left{
     margin-left: 15px;
 }
-.wrapper-tweet-img{
-    border-radius: 15px;
-    width: 100%;
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 3px;
-}
-.wrapper-tweet-img > img {
-    border-radius: 15px;
-    object-fit: contain;
-    width: 100%;
-}
-.wrapper-tweet-img > video {
-    border-radius: 15px;
-    object-fit: contain;
-    width: 100%;
-}
+
+
 footer{
     padding: 20px;
 }

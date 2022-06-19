@@ -16,19 +16,33 @@ export class SimpleTweetComponent implements OnInit {
 
   @Input()tweet!:TweetElement;
   
-  clase:string='wrapper-tweet-img';
   
-  arrayImg:string[]=['./../assets/images/strawberries-6834750_1280.jpg',
-                     './../assets/images/strawberries-6834750_1280.jpg',
-                     './../assets/images/strawberries-6834750_1280.jpg',
-                     './../assets/images/strawberries-6834750_1280.jpg']
 
-
-  siVideo:boolean=false;
-  siImagen:boolean=true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  darClaseContenedorImagen():string{
+    const numImagenes= (this.tweet.images.length)+'';
+
+    switch (numImagenes) {      
+      case '1':
+        return 'unaImagen';
+        
+      case '2':
+        return 'dosImagenes';
+        
+      case '3':
+        return 'tresImagenes';
+        
+      case '4':
+        return 'cuatroImagenes';
+        
+      default:
+        return '';
+    } 
   }
 
 }

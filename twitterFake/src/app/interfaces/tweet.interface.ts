@@ -1,3 +1,7 @@
+import { User } from "./User.interface";
+
+
+
 export interface Tweet {
     tweets: TweetElement[];
 }
@@ -13,8 +17,3 @@ export interface TweetElement {
     hashtag: string[];
 }
 
-export interface User {
-    user_name: string;
-    user:        string;
-    logo:        string;
-}

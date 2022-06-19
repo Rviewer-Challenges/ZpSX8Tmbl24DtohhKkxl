@@ -1,0 +1,78 @@
+
+.dosImagenes,.tresImagenes{   
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dosImagenes>img{
+    width: 50%;    
+    object-fit: contain;
+}
+
+.dosImagenes > img:nth-child(1) {    
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.dosImagenes > img:nth-child(2) {    
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: 3px;
+}
+
+.tresImagenes>img{
+    width: 33%;
+    object-fit: contain;    
+}
+
+.tresImagenes>img:nth-child(1){    
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.tresImagenes > img:nth-child(2) {       
+    margin-left: 3px;
+}
+.tresImagenes > img:nth-child(3) {    
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: 3px;
+}
+
+.unaImagen{
+    margin-top: 15px;
+}
+.unaImagen > img{
+    border-radius: 15px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.cuatroImagenes{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3px;
+
+}
+.cuatroImagenes > img{    
+    object-fit: contain;
+    width: 100%;
+}
+.cuatroImagenes > img:nth-child(1){
+    border-top-left-radius: 15px;    
+}
+
+.cuatroImagenes > img:nth-child(2){
+    border-top-right-radius: 15px;    
+}
+
+.cuatroImagenes > img:nth-child(3){
+    border-bottom-left-radius: 15px;    
+}
+
+.cuatroImagenes > img:nth-child(4){
+    border-bottom-right-radius: 15px;    
+}
