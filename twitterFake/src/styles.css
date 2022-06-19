@@ -381,6 +381,7 @@ aside{
 }
 .box-buttons-new-tweet{
     display: flex;
+    align-self: flex-end;
 }
 
 .line{
@@ -389,6 +390,9 @@ aside{
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+.wrapper-box-buttons-new-tweet{
+    display: flex;
 }
 .wrapper-button{
     display: flex;
@@ -465,7 +469,7 @@ aside{
     font-weight: 600;
     text-align: center;
     font-size: 1rem;
-    width: 90%;
+    width: 100%;
 }
 
 .box-tweet{
@@ -562,10 +566,7 @@ main{
     .wrapper-nav-boton > ul > li > div > span{
         display: none;
         
-    }
-    .wrapper-button{
-        display: none;
-    }
+    }    
     .pluma-resp{
         display: flex;
         padding: 5px;
@@ -582,6 +583,9 @@ main{
         display: none;
     }
     .dots{
+        display: none;
+    }
+    .wrapper-button-tweet{
         display: none;
     }
     

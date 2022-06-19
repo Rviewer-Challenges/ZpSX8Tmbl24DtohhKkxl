@@ -3,15 +3,17 @@
   
     <div class="box-new-tweet-content">
       <div class="user-text">
-        <span id="tweet"
+        <span #tweetElement id="tweet"
               class="textarea" 
               role="textbox" 
-              contenteditable>
+              contenteditable
+              (keyup)="teclaPulsada($event)">
+
         </span>
       </div>
       <div class="wrapper-button">
   
-        <button class="boton-new-tweet">
+        <button class="boton-new-tweet" >
           <fa-icon [icon]="faEarthAmericas"></fa-icon> Everyone can reply
         </button>
       </div>
@@ -50,18 +52,24 @@
             </a>
           </li>
         </ul>
-        <div class="box-buttons-new-tweet">
-          <span>
-            <fa-icon [icon]="faStar"></fa-icon>
+        <div class="wrapper-box-buttons-new-tweet">
+          <div class="box-buttons-new-tweet noVisible">
+          <span id="limit" class="noVisible">
+            {{caracteresRestantes}}
           </span>
           <div class="separator"></div>
           <button class="boton-new-thread"><span>
               <fa-icon [icon]="faCirclePlus"></fa-icon>
             </span>
-          </button>
-          <input type="button" value="Tweet" class="boton2" disabled="true">
+          </button>         
   
         </div>
+        <div>
+          <input type="button" value="Tweet" class="boton2" disabled="true">
+        </div>
+        </div>
+        
+        
       </div>
   
     </div>

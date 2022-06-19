@@ -39,8 +39,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.tweetService.getTwwets().subscribe((resp:Tweet)=>{
-      this.tweets=resp.tweets;
-      console.log(this.tweets);
+      this.tweets=resp.tweets;      
     });
     
   }
