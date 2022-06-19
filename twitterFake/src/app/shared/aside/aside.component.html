@@ -5,41 +5,12 @@
     <section class="happend">
       <div class="titulares">
         <h3>What's happening</h3>
-        <div class="box-titular">
-          <div class="titular-content">
-            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
-            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
-          </div>
-          <img src="./../assets/logos/obrador.jpg" alt="obrador">
-        </div>
-        <div class="box-titular">
-          <div class="titular-content">
-            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
-            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
-          </div>
-          <img src="./../assets/logos/obrador.jpg" alt="obrador">
-        </div>
-        <div class="box-titular">
-          <div class="titular-content">
-            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
-            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
-          </div>
-          <img src="./../assets/logos/obrador.jpg" alt="obrador">
-        </div>
-        <div class="box-titular">
-          <div class="titular-content">
-            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
-            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
-          </div>
-          <img src="./../assets/logos/obrador.jpg" alt="obrador">
-        </div>
-        <div class="box-titular">
-          <div class="titular-content">
-            <span class="title-titular">Politics</span>·<span class="title-titular">4 hours ago</span>
-            <p class="titular">El presidente Lopez Obrador no asistirá a la Cumbre de las Américas</p>
-          </div>
-          <img src="./../assets/logos/obrador.jpg" alt="obrador">
-        </div>
+        <ng-container *ngFor="let item of notices">
+          <app-titular [notice]="item"></app-titular>
+
+        </ng-container>
+        
+        
         <a href="">Show more</a>
       </div>
 

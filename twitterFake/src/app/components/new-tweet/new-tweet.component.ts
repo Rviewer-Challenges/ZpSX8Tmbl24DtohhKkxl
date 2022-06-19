@@ -35,8 +35,7 @@ export class NewTweetComponent implements OnInit {
     const lenghtTweet=tweet.length;    
     const boxButtons = document.querySelector('.box-buttons-new-tweet');
     const limitElement = document.querySelector('#limit');
-    this.caracteresRestantes=144-lenghtTweet;
-    console.log(event.key,lenghtTweet);
+    this.caracteresRestantes=144-lenghtTweet;    
     if (lenghtTweet>0){      
       boxButtons?.classList.remove('noVisible');
     }

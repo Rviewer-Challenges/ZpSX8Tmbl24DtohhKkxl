@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NoticesService } from '../../services/notices.service';
+import { Notice } from '../../interfaces/notices.interface';
 
 
 @Component({
@@ -8,10 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsideComponent implements OnInit {
 
+  public notices:Notice[]=[];
 
-  constructor() { }
+  constructor(private noticesServices:NoticesService) { }
 
   ngOnInit(): void {
+
+    this.noticesServices.getNotices()
+      .subscribe(resp=>{
+        this.notices=resp.notices;
+        console.log(this.notices);
+      })
+
   }
 
 }
