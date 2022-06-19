@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../../services/user.service';
+import { UserService } from '../../services/user.service';
 import {faImage,faSquarePollVertical,faStar,
   faFaceSmile,faCalendarPlus,faLocationDot,
-  faEarthAmericas,faCirclePlus,
-  faComment,faRetweet,faHeart,faArrowUpFromBracket,faEllipsis} from '@fortawesome/free-solid-svg-icons';
+  faEarthAmericas,faCirclePlus} from '@fortawesome/free-solid-svg-icons';
  
 @Component({
   selector: 'app-new-tweet',
@@ -20,11 +19,8 @@ export class NewTweetComponent implements OnInit {
   faLocationDot=faLocationDot;
   faEarthAmericas=faEarthAmericas;
   faCirclePlus=faCirclePlus;
-  faComment=faComment;
-  faRetweet=faRetweet;
-  faHeart=faHeart;
-  faArrowUpFromBracket=faArrowUpFromBracket;
-  faEllipsis=faEllipsis;
+  
+
   constructor(public userService:UserService) { }
 
   ngOnInit(): void {
