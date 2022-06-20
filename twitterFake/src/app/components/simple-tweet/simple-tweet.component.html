@@ -1,4 +1,4 @@
-<div class="box-tweet">
+<div class="box-tweet" (click)="irATweet(tweet)">
   <div class="logo-user-tweet">
     <img src="{{tweet.user.logo}}" alt="{{tweet.user.user}}">
   </div>
@@ -12,7 +12,7 @@
   <div class="tweet">
     <p>{{tweet.tweet}} 
       <ng-container *ngFor="let item of tweet.hashtag">
-        <span>{{item}}</span>
+        <span class="hastag">{{item}}</span>
       </ng-container>
             
     </p>

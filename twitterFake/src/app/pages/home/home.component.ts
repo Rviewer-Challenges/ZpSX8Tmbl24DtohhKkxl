@@ -27,20 +27,20 @@ export class HomeComponent implements OnInit {
   faHeart=faHeart;
   faArrowUpFromBracket=faArrowUpFromBracket;
   faEllipsis=faEllipsis;
-  public tweets:TweetElement[]=[];
+  tweets:TweetElement[]=[];
 
-  constructor(private tweetService:TweetService) { }
+  constructor(public tweetService:TweetService) { }
 
   
+  
   public get numberTweets() : number {
-    return this.tweets.length
+    return this.tweetService.tweets.length;
   }
   
 
   ngOnInit(): void {
-    this.tweetService.getTwwets().subscribe((resp:Tweet)=>{
-      this.tweets=resp.tweets;      
-    });
+    this.tweetService.getTwwets();
+    this.tweets=this.tweetService.tweets;
     
   }
 

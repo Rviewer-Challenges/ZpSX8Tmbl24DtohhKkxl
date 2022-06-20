@@ -2,22 +2,39 @@ import { HttpClient } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Tweet } from '../interfaces/tweet.interface';
+import { filter } from 'rxjs';
+import { Tweet, TweetElement } from '../interfaces/tweet.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TweetService {
 
-  
+  public tweets:TweetElement[]=[];
 
   constructor(private http:HttpClient) { 
     
   }
 
-  getTwwets():Observable<Tweet>{
+
+
+  getTwwets(){
     
-    return this.http.get<Tweet>('./assets/json/tweets.json');
+    this.http.get<Tweet>('./assets/json/tweets.json')
+    .subscribe((resp:Tweet)=>{
+        this.tweets=resp.tweets;
+    });
       
+  }
+
+  getTweet(id:number):TweetElement{
+    let tweetABuscar!:TweetElement;
+
+    this.tweets.forEach(tweet => {
+      if (tweet.id===id){
+        tweetABuscar=tweet;
+      }
+    });
+    return tweetABuscar;
   }
 }

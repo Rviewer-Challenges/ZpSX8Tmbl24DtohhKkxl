@@ -5,6 +5,7 @@ import { AsideComponent } from './aside/aside.component';
 import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ComponentsModule } from '../components/components.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { ComponentsModule } from '../components/components.module';
   imports: [
     CommonModule,
     FontAwesomeModule,
-    ComponentsModule
+    ComponentsModule,
+    AppRoutingModule
   ],
   exports:[
     HeaderComponent,

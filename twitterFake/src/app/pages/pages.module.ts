@@ -5,11 +5,12 @@ import { ExploreComponent } from './explore/explore.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
+import { TweetComponent } from './tweet/tweet.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent,ExploreComponent],
+  declarations: [HomeComponent,ExploreComponent, TweetComponent],
   imports: [
     CommonModule,FontAwesomeModule,SharedModule,ComponentsModule
   ],
