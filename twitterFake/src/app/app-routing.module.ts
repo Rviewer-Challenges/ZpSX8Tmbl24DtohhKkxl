@@ -5,9 +5,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { TweetComponent } from './pages/tweet/tweet.component';
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
-  {path:'explore', component:ExploreComponent},
-  {path:'tweet/:id', component:TweetComponent},
+  {path:'home', component:HomeComponent, data:{titulo:'Home'}},
+  {path:'explore', component:ExploreComponent, data:{titulo:'Explore'}},
+  {path:'tweet/:id', component:TweetComponent, data:{titulo:'Tweet'}},  
   {path:'', redirectTo:'home', pathMatch:'full' }
 ];
 

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import {HttpClientModule} from '@angular/common/http'
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
@@ -18,8 +19,8 @@ import {HttpClientModule} from '@angular/common/http'
     AppRoutingModule,
     FontAwesomeModule,
     PagesModule,
-    SharedModule,
-    AppRoutingModule,
+    SharedModule,    
+    ComponentsModule,
     HttpClientModule
   ],
   providers: [],

@@ -1,11 +1,15 @@
 <header>
     <div class="header-content-h1">
+        <a routerLink="/home" 
+           [ngClass]="{'noVisible':titulo==='Home' , 'visible': titulo ==='Tweet'}">
+           <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </a>
         <button class="user-boton-movil"><img src="{{userService.user?.logo}}"
                 alt="logo user"></button>
-        <h1>Home</h1>
+        <h1>{{titulo}}</h1>
     </div>
 
-    <span>
+    <span [ngClass]="{'visible':titulo==='Home' , 'noVisible': titulo !='Home'}">
         <svg viewBox="0 0 24 24" aria-hidden="true"
             class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03">
             <g>

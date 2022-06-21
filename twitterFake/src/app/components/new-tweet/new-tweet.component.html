@@ -6,8 +6,9 @@
         <span #tweetElement id="tweet"
               class="textarea" 
               role="textbox" 
-              contenteditable
-              (keyup)="teclaPulsada($event)">
+              contenteditable              
+              (keyup)="teclaPulsada($event)"
+              (keydown)="teclaPulsada($event)">
 
         </span>
       </div>
