@@ -5,7 +5,7 @@
     <section class="happend">
       <div class="titulares">
         <h3>What's happening</h3>
-        <ng-container *ngFor="let item of notices">
+        <ng-container *ngFor="let item of this.noticesServices.news">
           <app-titular [notice]="item"></app-titular>
 
         </ng-container>

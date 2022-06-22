@@ -1,6 +1,7 @@
 {
     "notices": [
         {
+            "id":1,
             "tipo": "noticias",
             "titular": "At vero eos et accusamus",
             "image": "./../assets/images/strawberries-6834750_1280.jpg",
@@ -65,6 +66,7 @@
             ]
         },
         {
+            "id":2,
             "tipo": "trending",
             "titular": "Temporibus autem quibusdam",
             "image": "./../assets/images/strawberries-6834750_1280.jpg",
@@ -135,6 +137,7 @@
             ]
         },
         {
+            "id":3,
             "tipo": "Deportes",
             "titular": "Itaque earum rerum hic tenetur a sapiente delectus",
             "image": "./../assets/images/strawberries-6834750_1280.jpg",

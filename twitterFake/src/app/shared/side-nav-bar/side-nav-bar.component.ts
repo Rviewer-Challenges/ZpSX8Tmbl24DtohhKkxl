@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { faBell, faHashtag, faStar,faHome,faEnvelope, faBookmark,
          faBars, faUser, faEllipsis  } from '@fortawesome/free-solid-svg-icons';
@@ -19,9 +20,13 @@ export class SideNavBarComponent implements OnInit {
   faUser=faUser;
   faElipsis=faEllipsis;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  irHome(){
+    this.router.navigateByUrl('/home')
   }
 
 }

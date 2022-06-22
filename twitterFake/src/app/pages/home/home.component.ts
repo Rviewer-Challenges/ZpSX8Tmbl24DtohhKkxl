@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TweetService } from '../../services/tweet.service';
-import { Tweet, TweetElement } from '../../interfaces/tweet.interface';
+import { TweetElement } from '../../interfaces/tweet.interface';
 import { faMagnifyingGlass,faImage,faSquarePollVertical,
          faFaceSmile,faCalendarPlus,faLocationDot,
          faEarthAmericas,faCirclePlus,

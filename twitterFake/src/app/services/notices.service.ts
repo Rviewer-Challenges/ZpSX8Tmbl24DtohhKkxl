@@ -2,18 +2,34 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { HttpClient } from '@angular/common/http';
-import { Notices } from '../interfaces/notices.interface';
+import { Notice } from '../interfaces/notices.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NoticesService {
 
+  news:Notice[]=[];
+
   constructor(private http:HttpClient) { }
 
-  getNotices():Observable<Notices>{
+  getNotices(){
     
-    return this.http.get<Notices>('./assets/json/notices.json');
+    this.http.get('./assets/json/notices.json').
+      subscribe((resp:any)=>{
+        this.news=resp.notices;
+      });
       
+  }
+
+  getGroupNews(id:number):Notice{
+    let group!:Notice;
+
+    this.news.forEach(grupo => {
+      if (grupo.id===id){
+        group=grupo;
+      }
+    });
+    return group;
   }
 }

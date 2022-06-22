@@ -12,16 +12,12 @@ export class AsideComponent implements OnInit {
 
   public notices:Notice[]=[];
 
-  constructor(private noticesServices:NoticesService) { }
+  constructor(public noticesServices:NoticesService) { }
 
   ngOnInit(): void {
 
-    this.noticesServices.getNotices()
-      .subscribe(resp=>{
-        this.notices=resp.notices;
-        console.log(this.notices);
-      })
-
+    this.noticesServices.getNotices();
+    this.notices=this.noticesServices.news; 
   }
 
 }

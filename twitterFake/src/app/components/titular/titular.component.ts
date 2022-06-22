@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Notice } from '../../interfaces/notices.interface';
 
 @Component({
@@ -10,9 +11,15 @@ export class TitularComponent implements OnInit {
 
   @Input()notice!:Notice;
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
+  }
+
+  cargarTweets(noticia:Notice){
+    if (!noticia) return;
+
+    this.route.navigateByUrl(`explore/${noticia.id}`);
   }
 
 }

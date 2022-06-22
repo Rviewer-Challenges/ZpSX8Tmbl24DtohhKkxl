@@ -90,10 +90,22 @@ header>span>svg{
 }
 .logo{
     padding: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo:hover{
+    background-color:#c7deee; 
+    
 }
 .logo > svg {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     fill: var(--accent);
 }
 /*sidenavbar*/

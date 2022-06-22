@@ -1,1 +1,3 @@
-<p>explore works!</p>
+<ng-container *ngFor="let tweet of tweets">
+    <app-simple-tweet [tweet]="tweet"> </app-simple-tweet>
+  </ng-container>
