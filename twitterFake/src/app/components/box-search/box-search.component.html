@@ -1,5 +1,12 @@
 <div class="box-search">
-    <input type="search" name="search" id="search" placeholder="Search Twitter">
+    <input 
+      type="search" 
+      name="search" 
+      id="search" 
+      placeholder="Search Twitter" 
+      autocomplete="off" 
+      [(ngModel)]="textSearch"
+      (keyup)="buscar()" >
     <span>
       <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
     </span>

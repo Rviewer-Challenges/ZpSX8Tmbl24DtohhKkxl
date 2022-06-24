@@ -11,6 +11,7 @@ export interface TweetElement {
     tweet:   string;
     user:    User;
     images:  string[];
+    link?:    string;
     reply:   number;
     retweet: number;
     likes:   number;

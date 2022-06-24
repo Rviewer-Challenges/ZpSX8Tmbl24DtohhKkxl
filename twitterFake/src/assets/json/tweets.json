@@ -9,6 +9,7 @@
                 "logo":"./../assets/logos/logoElPais.jpg"
             },
             "images":[],
+            "link":"https://go.rviewer.io/",
             "reply":1,
             "retweet":15,
             "likes":25,
@@ -22,7 +23,8 @@
                 "user":"@ipsum",
                 "logo":"./../assets/logos/logoCNN.jpg"
             },
-            "images":["./../assets/images/strawberries-6834750_1280.jpg"],
+            "images":["./../assets/images/strawberries-6834750_1280.jpg"],            
+            "link":"",
             "reply":10,
             "retweet":105,
             "likes":200,
@@ -36,7 +38,8 @@
                 "user":"@sed",
                 "logo":"./../assets/logos/logoElMundo.jpg"
             },
-            "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg"],
+            "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg"],            
+            "link":"",
             "reply":0,
             "retweet":1500,
             "likes":500,
@@ -52,6 +55,7 @@
             },
             "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg",
                 "./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg"],
+            "link":"",
             "reply":45,
             "retweet":5000,
             "likes":7500,
@@ -66,6 +70,7 @@
                 "logo":"./../assets/logos/userFake.jpg"
             },
             "images":["./../assets/gifs/GIF Animation.gif"],
+            "link":"",
             "reply":11500,
             "retweet":15555,
             "likes":256654,
@@ -81,6 +86,7 @@
             },
             "images":["./../assets/images/strawberries-6834750_1280.jpg","./../assets/images/strawberries-6834750_1280.jpg",
                 "./../assets/images/strawberries-6834750_1280.jpg"],
+            "link":"",
             "reply":45,
             "retweet":500,
             "likes":2500,

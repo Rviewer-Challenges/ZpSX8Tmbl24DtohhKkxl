@@ -542,6 +542,10 @@ aside{
 .tweet{
     grid-area: tweet;
 }
+
+.tweet > a {
+    color: var(--accent);
+}
 .logo-user-tweet{
     grid-area: logo;    
     

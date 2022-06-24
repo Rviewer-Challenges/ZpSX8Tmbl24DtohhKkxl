@@ -16,6 +16,9 @@ export class TweetService {
     
   }
 
+  establecerTweets(tweets:TweetElement[]){
+    this.tweets=tweets;
+  }
 
 
   getTwwets(){

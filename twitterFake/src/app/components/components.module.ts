@@ -7,20 +7,31 @@ import { SimpleTweetComponent } from './simple-tweet/simple-tweet.component';
 import { TitularComponent } from './titular/titular.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from '../app-routing.module';
-
+import { FormsModule } from '@angular/forms';
+import { UrlLinkPipe } from './pipes/url-link.pipe';
 
 
 @NgModule({
   declarations: [
-    BoxSearchComponent,NewTweetComponent,SimpleTweetComponent, TitularComponent, DashboardComponent
+    BoxSearchComponent,
+    NewTweetComponent,
+    SimpleTweetComponent,
+    TitularComponent, 
+    DashboardComponent,
+    UrlLinkPipe
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
 
   ],exports:[
-    BoxSearchComponent,NewTweetComponent,SimpleTweetComponent,TitularComponent,DashboardComponent
+    BoxSearchComponent,
+    NewTweetComponent,
+    SimpleTweetComponent,
+    TitularComponent,
+    DashboardComponent
   ]
 })
 export class ComponentsModule { }

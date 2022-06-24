@@ -15,6 +15,7 @@
                         "logo": "./../assets/logos/logoElPais.jpg"
                     },
                     "images": [],
+                    "link":"https://go.rviewer.io/",
                     "reply": 1,
                     "retweet": 15,
                     "likes": 25,
@@ -36,6 +37,7 @@
                         "./../assets/images/strawberries-6834750_1280.jpg"
                     ],
                     "reply": 10,
+                    "link":"",
                     "retweet": 105,
                     "likes": 200,
                     "hashtag": [

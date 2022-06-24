@@ -20,9 +20,14 @@ export class ExploreComponent implements OnInit {
     window.scrollTo(0,0);
     this.tweets=[]
     this.route.params.subscribe(params=>{
-      this.id=parseInt( params['id'] );
+      this.id=parseInt( params['text'] );
       if (this.id!=0){
-        this.tweets=this.noticesService.getGroupNews(this.id).tweets;
+        if (!isNaN(this.id)){
+          this.tweets=this.noticesService.getGroupNews(this.id).tweets;
+        }else{
+          this.tweets=this.noticesService.search(params['text']);
+        }
+        
       }else{
         
         this.noticesService.news.forEach(group => {

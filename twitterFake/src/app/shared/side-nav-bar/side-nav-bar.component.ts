@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { faBell, faHashtag, faStar,faHome,faEnvelope, faBookmark,
-         faBars, faUser, faEllipsis  } from '@fortawesome/free-solid-svg-icons';
+         faBars, faUser, faEllipsis,faFeather  } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-side-nav-bar',
   templateUrl: './side-nav-bar.component.html',
@@ -19,6 +19,7 @@ export class SideNavBarComponent implements OnInit {
   faBars=faBars;
   faUser=faUser;
   faElipsis=faEllipsis;
+  faFeather=faFeather;
 
   constructor(private router:Router) { }
 
