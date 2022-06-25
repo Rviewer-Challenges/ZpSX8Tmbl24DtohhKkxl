@@ -1,0 +1,31 @@
+.box-tweet{
+    display: flex;
+    flex-direction: column;
+    cursor: auto;
+    padding: 15px;
+    border-bottom: 1px solid #d5d7da;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+
+.box-tweet:hover{
+    background-color: var(--backGroundColorPPal);
+}
+.user-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box-tweet-superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user:last-child{
+    align-self: center;
+}

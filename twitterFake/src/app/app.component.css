@@ -1,0 +1,22 @@
+app-side-nav-bar,app-header{
+    position: sticky;
+    top:0%;
+}
+
+app-aside{
+    position: sticky;
+    top:0%;
+    height: 1200px;
+}
+
+@media (max-width:500px){
+
+    app-side-nav-bar{
+        position: fixed;
+        grid-area: footer;
+        bottom: 0%;
+        top: 93%;
+        width: 100%;
+    }
+
+}

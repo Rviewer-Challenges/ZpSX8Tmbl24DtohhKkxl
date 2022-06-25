@@ -1,0 +1,60 @@
+<aside>
+    <app-box-search>
+      
+    </app-box-search>
+    <section class="happend">
+      <div class="titulares">
+        <h3>What's happening</h3>
+        <ng-container *ngFor="let item of this.noticesServices.news">
+          <app-titular [notice]="item"></app-titular>
+
+        </ng-container>
+        
+        
+        <a href="">Show more</a>
+      </div>
+
+    </section>
+
+    <section class="who">
+      <h3>Who to follow</h3>
+      <div class="box-follow">
+        <div class="user-follow">
+          <img class="logo-user" src="./../assets/logos/userFake.jpg" alt="user fake">
+          <div class="follow-content">
+            <span class="title">La Resistencia por M+</span><span class="sub-title">@LaResistencia</span>
+          </div>
+        </div>
+        <input type="button" class="boton-follow" value="Follow">
+      </div>
+      <div class="box-follow">
+        <div class="user-follow">
+          <img class="logo-user" src="./../assets/logos/userFake.jpg" alt="user fake">
+          <div class="follow-content">
+            <span class="title">La Resistencia por M+</span><span class="sub-title">@LaResistencia</span>
+          </div>
+        </div>
+        <input type="button" class="boton-follow" value="Follow">
+      </div>
+      <div class="box-follow">
+        <div class="user-follow">
+          <img class="logo-user" src="./../assets/logos/userFake.jpg" alt="user fake">
+          <div class="follow-content">
+            <span class="title">La Resistencia por M+</span><span class="sub-title">@LaResistencia</span>
+          </div>
+        </div>
+        <input type="button" class="boton-follow" value="Follow">
+      </div>
+      <a href="">Show more</a>
+    </section>
+
+
+
+    <footer>
+      <span><a href="">Terms of Service</a></span><span><a href="">Privacy Policy</a></span>
+      <span><a href="">Cookie Policy</a></span><span><a href="">Accessibility</a></span>
+      <span><a href="">Ads info</a></span><span><a href="">More</a></span><br><span><a href="">© 2022 Twitter,
+          Inc.</a></span>
+    </footer>
+  </aside>
+  

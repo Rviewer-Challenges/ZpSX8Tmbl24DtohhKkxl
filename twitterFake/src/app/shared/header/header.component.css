@@ -1,0 +1,10 @@
+.noVisible{
+    display: none;
+}
+.visible{
+    display: flex;
+}
+
+fa-icon{
+    align-self: center;
+}
