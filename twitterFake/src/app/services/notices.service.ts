@@ -13,6 +13,8 @@ export class NoticesService {
 
   news:Notice[]=[];
 
+  
+
   constructor(private http:HttpClient) { }
 
   getNotices(){

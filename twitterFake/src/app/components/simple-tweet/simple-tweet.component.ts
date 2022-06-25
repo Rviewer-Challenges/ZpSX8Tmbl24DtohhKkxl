@@ -26,7 +26,6 @@ export class SimpleTweetComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
 
 
   irATweet(tweet:TweetElement){

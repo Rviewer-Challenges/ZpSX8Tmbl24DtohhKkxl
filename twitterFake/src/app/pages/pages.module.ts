@@ -7,8 +7,6 @@ import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
 import { TweetComponent } from './tweet/tweet.component';
 
-
-
 @NgModule({
   declarations: [HomeComponent,ExploreComponent, TweetComponent],
   imports: [

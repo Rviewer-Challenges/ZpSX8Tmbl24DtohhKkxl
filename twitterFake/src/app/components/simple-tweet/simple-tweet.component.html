@@ -17,7 +17,7 @@
             
     </p>
     <ng-container *ngIf="tweet.images.length>0">
-      <div [ngClass]="darClaseContenedorImagen()">
+      <div [ngClass]="darClaseContenedorImagen()"style="cursor: pointer;">
 
         <ng-container *ngFor="let img of tweet.images">
           <img src="{{img}}" alt="">
@@ -48,3 +48,4 @@
     </span>
   </div>
 </div>
+
